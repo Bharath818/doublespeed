@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body {
+    
+    font-family: Titillium Web, sans-serif;
+
+}
+
+.services {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .service-heading {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .service-box {
+    width: 45%; /* Adjust the width as needed for larger screens */
+    margin: 10px;
+    text-align: center;
+  }
+
+
+  
+  /* .service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  } */
+  
+  /* .service-box {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+  } */
+  
+  .service-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .service-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .service-box {
+        width: 100%; /* Make it one column on smaller screens */
+    }
+}
+  @media only screen and (max-width: 1000px) {
+    .service-box {
+        width: 100%; /* Make it one column on smaller screens */
+    }
+}
+
+  .EVENT-SUPPORT {
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+    align-items: center;
+    text-align: center; /* Center text within the container */
+    width: 100%;
+  }
+  
+  .EVENT-SUPPORT img {
+    width: 80%;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+  }
+  
+  .EVENT-SUPPORT .content {
+    margin-top: 15px; /* Adjust the spacing between image and text */
+  }
+
+  .service h3 {
+    background-color: rgb(220, 209, 1);
+    padding: 10px;
+  }
+
+  

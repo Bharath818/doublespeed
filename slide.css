@@ -1,0 +1,91 @@
+
+/* Your existing styles */
+
+.container {
+    display: flex;
+    margin-top: 16vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    max-width: 100%;
+    background-color: blanchedalmond;
+    
+   
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Center the slides horizontally */
+}
+
+
+
+.slider img {
+    width: 700px;
+    height: auto;
+    justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+
+    .slider img {
+        width: 500px;
+        height: auto;
+        justify-content: center;
+    }
+
+}
+
+
+.prev-button{
+    top: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+.next-button {    
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+}
+
+.moveslide-buttons {
+    margin: 100px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 217, 20);
+
+}
+
+.prev-button {
+    left: 50px;
+}
+
+.next-button {
+    right: 50px;
+}
+
+.center-container {
+    display: flexbox;
+    margin-top: 7.5vh;
+    background-color: blue;
+
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+}
+

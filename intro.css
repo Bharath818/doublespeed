@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body {    
+    font-family: Titillium Web, sans-serif;
+}
+
+.intro-containter{
+    height: fit-content;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: black;
+    color: azure;
+    max-width: 100%;
+
+
+}
+
+.logo-container{
+    padding: 10px;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.logo1{
+    opacity: 0;
+    transform: translateY(-50%) scale(0.1); /* Initial position and scale for Logo 1 */
+    animation-name: flyInLogo1;
+    animation-delay: 2s; /* Delay for the first logo animation */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; /* Repeat infinitely */
+    animation-duration: 2s;
+}
+
+@keyframes flyInLogo1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.1); /* Initial position and scale for Logo 1 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%) scale(1); /* Final position and scale for Logo 1 */
+    }
+}
+
+.logo2 {
+    opacity: 0;
+    transform: translateX(-200%); /* Initial position for Logo 2 */
+    animation-name: flyInLogo2;
+    animation-delay: 2s; /* Delay for the second logo animation */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; /* Repeat infinitely */
+    animation-duration: 2s; /* Animation duration */
+  
+}
+
+@keyframes flyInLogo2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%) translateY(0%) scale(0.1); /* Initial position and scale for Logo 2 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(0%) scale(1); /* Final position and scale for Logo 2 */
+    }
+}
+
+
+.title1 {
+
+    font-size:xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size:larger;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.tagline {
+    margin-top: 20px;
+    color: gold;
+    font-size:larger;
+}

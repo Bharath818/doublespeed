@@ -1,0 +1,35 @@
+
+
+
+
+.slider {
+    position: relative;
+}
+
+.nav-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 150px;
+    height: 20px;
+    background-color: rgba(247, 247, 247, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgb(93, 93, 93);
+    
+  }
+
+  .nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .nav-dot.active {
+    background-color: #555;
+  }
